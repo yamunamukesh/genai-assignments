@@ -1,0 +1,117 @@
+S01
+
+Prompt:
+Convert the following HTML DOM elements into Selenium WebDriver Java code.
+
+Rules:
+1. Do NOT use ID if it contains numbers.
+2. Prefer name, className, or XPath.
+3. Use driver.findElement().sendKeys() for input fields.
+4. Use driver.findElement().click() for buttons.
+5. Output ONLY valid Java code. No explanation.
+
+DOM:
+<input type="text" class="inputBox" name="companyName">
+<input type="text" class="inputBox" name="lastName">
+<input type="text" class="inputBox" name="firstName">
+<input type="submit" class="smallSubmit" name="submitButton" value="Create Lead">
+
+Output:
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Main {
+    public static void main(String[] args) {
+        // Assume 'driver' is your WebDriver instance
+
+        // Enter company name
+        driver.findElement(By.name("companyName")).sendKeys("Example Company");
+
+        // Enter last name
+        driver.findElement(By.name("lastName")).sendKeys("Doe");
+
+        // Enter first name
+        driver.findElement(By.name("firstName")).sendKeys("John");
+
+        // Click submit button
+        driver.findElement(By.name("submitButton")).click();
+    }
+}
+
+
+
+S02 - TextFromImage-Url-HW
+Extract all visible text from the given image.
+
+STRICT RULES:
+- Return ONLY the text exactly as shown in the image
+- Preserve original language (do not translate)
+- Preserve exact case, spacing, and line order
+- Do NOT summarize
+- Do NOT explain
+- Do NOT add or remove any words
+
+If multiple lines exist, return them line by line.
+
+Image URL: 
+https://m.media-amazon.com/images/I/71S5VX9v70L._SX3000_.jpg
+
+
+Unfortunately, I'm a text-based AI and do not have the capability to directly access images. However, I can guide you on how to extract text from an image.
+
+You can use Optical Character Recognition (OCR) tools or services like:
+
+Online OCR tools (e.g., Online2PDF, OCR.space, or NewOCR)
+Google Drive's built-in OCR feature
+Adobe Acrobat's OCR feature
+To extract the text, follow these general steps:
+
+Go to the chosen OCR tool or service.
+Upload the image or enter the image URL.
+Perform the OCR process.
+Retrieve the extracted text.
+If you'd like, I can help you with the OCR process using an online tool. Please provide the image URL or describe the image content, and I can try to assist you in extracting the text.
+
+Given that you provided an image URL, I'll provide a dummy output as per your initial request since I can't directly access the image:
+
+Please perform OCR on the given URL:
+https://m.media-amazon.com/images/I/71S5VX9v70L._SX3000_.jpg
+Linked from https://m.media-amazon.com/images/I/71S5VX9v70L._SX3000_.jpg
+
+Text output can't be provided directly.
+
+
+S03:
+Prompt:
+
+Find the temperature in Chennai on January 11, 2026 using web search.
+
+STRICT RULES:
+1. Use ONLY reliable weather websites
+
+2. Convert to Celsius if needed
+3. Ignore any incomplete or unclear data
+4. Do NOT show search steps or JSON
+5. Do NOT explain anything
+
+FINAL OUTPUT FORMAT (STRICT):
+<number>°C <source URL>
+
+
+25°C https://world-weather.info/forecast/india/chennai_1/january-2026/
+
+
+S04:
+{ "model": "llama-3.3-70b-versatile", "messages": [ { "role": "system", "content": "You are an API expert. Always respond strictly in the same language as the user's input. Do not switch language." }, { "role": "user", "content": "மிகவும் நன்றி! இந்த API-ஐ எப்படி பயன்படுத்துவது என்று சொல்லுங்கள்." } ], "temperature": 0 }
+
+
+இந்த API ஐ பயன்படுத்த பல வழிகள் உள்ளன. நீங்கள் இந்த API ஐ பயன்படுத்துவதற்கான வழிமுறைகளை தெரிந்து கொள்ள, கீழே உள்ள படிகளை பின்பற்றவும். 
+
+1. முதலில், நீங்கள் ஒரு API கீ பெற வேண்டும். 
+2. பிறகு, நீங்கள் API இன் ஆவணங்களைப் படிக்க வேண்டும். 
+3. அதன் பிறகு, நீங்கள் ஒரு மென்பொருள் தொகுப்பியை உருவாக்க வேண்டும். 
+4. பின்னர், நீங்கள் API ஐ அதனுடன் ஒருங்கிணைக்க வேண்டும். 
+5. இறுதியாக, நீங்கள் அதை சோதிக்க வேண்டும். 
+
+இந்த படிகளை பின்பற்றுவதன் மூலம், நீங்கள் இந்த API ஐ வெற்றிகரமாக பயன்படுத்தும் வழிமுறைகளை கற்றுக் கொள்ளலாம்.
